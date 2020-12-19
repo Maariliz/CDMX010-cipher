@@ -20,7 +20,7 @@ const cipher = {
             for (let i = 0; i < oldMessage2.length; i++){
             
             if(oldMessage2.charCodeAt(i)>= 65 && oldMessage2.charCodeAt(i)<=90){
-                texto2 = String.fromCharCode((oldMessage2.charCodeAt(i)-65-offsetNew2)%26+65);
+                texto2 = String.fromCharCode((oldMessage2.charCodeAt(i)+65-offsetNew2)%26+65);
                 newMessage2.push(texto2)
                
             }

@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher Mariliz</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-    <body>
-      <!--transparencia-->
-    <div class="background"> 
-      <!--Titulo e instrucciones-->
-      <div id="root">
-        <div id="txt1">
-          <br>
-            <h1> Contraseñas más seguras en unos simples pasos </h1>
-            <h2 ">Escribe aquí la contraseña que quieres cifrar:</h2>
-        </div>
-          <div id="disclaimer"    
-            <p style="text-align: center; color: #B72332;">Disclaimer: Nuestra aplicación no almacena los datos que introduces ¡Úsala con confizanza!</p>
-        </div>
-            <!--Inputs y botones-->
-        <div id="input1">
-            <p> <input type="text" id="originalMessage" placeholder ="escribe tu mensaje"></p>
-        </div>
-        <div id="txt2">
-          <p style="text-align: center; color: #183D56;"> Elige el número de letras a desplazarse </p>
-        </div>  
-        <div id="input2">
-          <p> <input type="number" id="displacement" placeholder="# de desplazamiento"></p>
-        </div>  
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher Mariliz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--transparencia-->
+  <div class="background">
+    <!--Titulo e instrucciones-->
+    <div id="root">
+      <div id="txt1">
+        <br>
+        <h1> Contraseñas más seguras en unos simples pasos </h1>
+        <h2> Escribe aquí la contraseña que quieres cifrar:</h2>
+      </div>
+      <div id="disclaimer">
+        <p> <strong>DISCLAIMER: </strong>Nuestra aplicación no almacena los datos que introduces ¡Úsala con confizanza!
+        </p>
+      </div>
+      <!--Inputs y botones-->
+      <div id="input1">
+        <p> <input type="text" id="originalMessage" placeholder="escribe tu mensaje"></p>
+      </div>
+      <div id="txt2">
+        <p> Elige el número de letras a desplazarse </p>
+      </div>
+      <div id="input2">
+        <p> <input type="number" id="displacement" placeholder="# de desplazamiento"></p>
+      </div>
       <!--Botones de cifrado/descifrado -->
-        <div class="btns">
-            <button id="btnEncode" style="text-align: center"> Comienza el cifrado </button>
-            <button id="btnDecode" style="text-align: center"> ¡Descífralo! </button> 
-           <!--<button class="btn" style="text-align: center"> Borrar </button> -->
-        </div>    
+      <div class="btns">
+        <button id="btnEncode" style="text-align: center"> Comienza el cifrado </button>
+        <button id="btnDecode" style="text-align: center"> ¡Descífralo! </button>
+      </div>
       <!-- Nuevo Mensaje-->
       <div id="txt3">
-            <p style="text-align: center; color: #183D56;"> Tu nueva contraseña es: </p>
-      </div>  
-      <div id="input3">  
-          <p style="text-align: center" type="text" id="newTextMessage" placeholder="nueva contraseña" ;> </p>
+        <p style="text-align: center; color: #183D56;"> Tu contraseña cifrada es: </p>
+      </div>
+      <div id="input3">
+        <p id="newTextMessage" ;> </p>
       </div>
     </div>
   </div>
+  <script src="index.js" type="module"></script>
+</body>
 
-    <script src="index.js" type="module"></script>
-  </body>
 </html>
