@@ -8,9 +8,9 @@ const cipher = {
           if(oldMessage.charCodeAt(i)>= 65 && oldMessage.charCodeAt(i)<=90){
               texto = String.fromCharCode((oldMessage.charCodeAt(i)-65+offsetNew)%26+65);
               newMessage.push(texto)}
-              if(oldMessage.charCodeAt(i)>= 97 && oldMessage.charCodeAt(i)<=122){
+              /*if(oldMessage.charCodeAt(i)>= 97 && oldMessage.charCodeAt(i)<=122){
                 texto = String.fromCharCode((oldMessage.charCodeAt(i)-97+offsetNew)%26+97);
-                newMessage.push(texto)}
+                newMessage.push(texto)}*/
           }
                   return newMessage.join("");
   },
@@ -24,11 +24,11 @@ const cipher = {
                 texto2 = String.fromCharCode((oldMessage2.charCodeAt(i)+65-offsetNew2)%26+65);
                 newMessage2.push(texto2)
             }
-               else if(oldMessage2.charCodeAt(i)>= 97 && oldMessage2.charCodeAt(i)<=122){
+              /*if(oldMessage2.charCodeAt(i)>= 97 && oldMessage2.charCodeAt(i)<=122){
                     texto2 = String.fromCharCode((oldMessage2.charCodeAt(i)+97-offsetNew2)%26+97);
                     newMessage2.push(texto2)
                   
-            }
+            }*/
         }
         return newMessage2.join("");
     },
